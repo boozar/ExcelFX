@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.controlls.UtilTableControl">
+	<left>
+		<VBox prefHeight="326.0" prefWidth="116.0" BorderPane.alignment="CENTER">
+			<children>
+				<Label text="Identification">
+					<VBox.margin>
+						<Insets bottom="10.0" left="15.0" right="10.0" top="25.0"/>
+					</VBox.margin>
+				</Label>
+				<Label text="Product type">
+					<VBox.margin>
+						<Insets bottom="7.0" left="15.0" right="10.0" top="10.0"/>
+					</VBox.margin>
+				</Label>
+				<Label text="Manufacturer">
+					<VBox.margin>
+						<Insets bottom="7.0" left="15.0" right="10.0" top="10.0"/>
+					</VBox.margin>
+				</Label>
+				<Label text="Specification">
+					<VBox.margin>
+						<Insets bottom="7.0" left="15.0" right="10.0" top="10.0"/>
+					</VBox.margin>
+				</Label>
+				<Label text="Retail price">
+					<VBox.margin>
+						<Insets bottom="7.0" left="15.0" right="10.0" top="10.0"/>
+					</VBox.margin>
+				</Label>
+				<Label text="Whole price">
+					<VBox.margin>
+						<Insets bottom="7.0" left="15.0" right="10.0" top="10.0"/>
+					</VBox.margin>
+				</Label>
+				<Label text="Dealer price">
+					<VBox.margin>
+						<Insets bottom="7.0" left="15.0" right="10.0" top="10.0"/>
+					</VBox.margin>
+				</Label>
+			</children>
+		</VBox>
+	</left>
+	<center>
+		<VBox prefHeight="326.0" prefWidth="506.0" BorderPane.alignment="CENTER">
+			<children>
+				<TextField fx:id="txtID">
+					<VBox.margin>
+						<Insets bottom="5.0" left="5.0" right="15.0" top="20.0"/>
+					</VBox.margin>
+				</TextField>
+				<TextField fx:id="txtType">
+					<VBox.margin>
+						<Insets bottom="5.0" left="5.0" right="15.0" top="5.0"/>
+					</VBox.margin>
+				</TextField>
+				<TextField fx:id="txtManufacturer">
+					<VBox.margin>
+						<Insets bottom="5.0" left="5.0" right="15.0" top="5.0"/>
+					</VBox.margin>
+				</TextField>
+				<TextField fx:id="txtSpecification">
+					<VBox.margin>
+						<Insets bottom="5.0" left="5.0" right="15.0" top="5.0"/>
+					</VBox.margin>
+				</TextField>
+				<TextField fx:id="txtRetail">
+					<VBox.margin>
+						<Insets bottom="5.0" left="5.0" right="15.0" top="5.0"/>
+					</VBox.margin>
+				</TextField>
+				<TextField fx:id="txtWhole">
+					<VBox.margin>
+						<Insets bottom="5.0" left="5.0" right="15.0" top="5.0"/>
+					</VBox.margin>
+				</TextField>
+				<TextField fx:id="txtDealer">
+					<VBox.margin>
+						<Insets bottom="5.0" left="5.0" right="15.0" top="5.0"/>
+					</VBox.margin>
+				</TextField>
+			</children>
+		</VBox>
+	</center>
+	<bottom>
+		<HBox alignment="TOP_RIGHT" prefHeight="29.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+			<children>
+				<Button fx:id="btnClose" cancelButton="true" mnemonicParsing="false" onAction="#actionClose"
+				        prefWidth="100.0" text="Close">
+					<HBox.margin>
+						<Insets bottom="15.0" left="15.0" right="15.0" top="5.0"/>
+					</HBox.margin>
+				</Button>
+				<Button fx:id="btnOk" defaultButton="true" mnemonicParsing="false" onAction="#actionSave"
+				        prefWidth="100.0" text="Ok">
+					<HBox.margin>
+						<Insets bottom="15.0" left="15.0" right="15.0" top="5.0"/>
+					</HBox.margin>
+				</Button>
+			</children>
+		</HBox>
+	</bottom>
+</BorderPane>
